@@ -7,4 +7,4 @@ class TestBowlingGame(unittest.TestCase):
     def setUp(self):
         self.game = Game()
 
-    def testGutterGame()
+    def testGutterGame():

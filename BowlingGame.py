@@ -5,3 +5,4 @@ class Game():
 
     def score():
         #called at the end of the game and returns total score
+        return -1

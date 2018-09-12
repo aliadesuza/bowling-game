@@ -7,7 +7,7 @@ class TestBowlingGame(unittest.TestCase):
     def setUp(self):
         self.game = Game()
 
-    def testGutterGame():
-        for i in range(20):
-            game.roll(0)
-        assert game.score == 0
+    def test_guttergame(self):
+        # for i in range(20):
+        #     self.game.rolls(0)
+        assert self.game.score == 0

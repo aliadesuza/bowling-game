@@ -1,0 +1,5 @@
+_pycache_
+.pytest_cache
+.vscode
+BowlingGame.pyc
+BowlingGameTest.pyc 

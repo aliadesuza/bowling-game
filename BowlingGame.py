@@ -1,9 +1,11 @@
 class Game():
     
-    def rolls(self, pins):
-        #called each time the player rolls a ball
-        return 0
     
+    score = 0
+
+    def roll(self, pins):
+        self.score += pins
+
     #called at the end of the game and returns total score
-    def score(self):
-        return 0
+    def getScore(self):
+        return self.score

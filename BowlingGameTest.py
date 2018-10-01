@@ -14,26 +14,24 @@ class BowlingGameTest(unittest.TestCase):
     def test_guttergame(self):
         for i in range(20):
             self.game.roll(0)
-        
-        assert self.game.getScore() == 0
+        expectedScore = 0
+        self.assertEqual(expectedScore, self.game.getScore(), 'incorrect score')
 
     def test_all_ones(self):
-        # for i in range(20):
-        #     self.game.roll(1)
-        self.rollMany(19, 1)
+        self.rollMany(20, 1)
         expectedScore = 20
         self.assertEqual(expectedScore, self.game.getScore(), 'incorrect score')
 
-    # def test_roll_many(self):
-    #     self.rollMany(19, 1)
-    #     expectedScore = 20
-    #     self.assertEqual(expectedScore, self.game.getScore(), 'incorrect score')
+    # # def test_roll_many(self):
+    # #     self.rollMany(19, 1)
+    # #     expectedScore = 20
+    # #     self.assertEqual(expectedScore, self.game.getScore(), 'incorrect score')
     
     def test_one_spare(self):
         self.game.roll(5)
         self.game.roll(5)
         self.game.roll(3)
-        # self.rollMany(17,0)
+        self.rollMany(17,0)
         expectedScore = 16
         self.assertEqual(expectedScore, self.game.getScore(), 'incorrect score')
 
